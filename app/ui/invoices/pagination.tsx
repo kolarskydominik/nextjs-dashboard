@@ -99,16 +99,4 @@ function PaginationArrow({
     'pointer-events-none text-gray-300': isDisabled,
     'hover:bg-gray-100': !isDisabled,
     'mr-2 md:mr-4': direction === 'left',
-    'ml-2 md:ml-4': direction === 'right',
-  });
-
-  const icon = direction === 'left' ? <ArrowLeftIcon className="w-4" /> : <ArrowRightIcon className="w-4" />;
-
-  return isDisabled ? (
-    <div className={className}>{icon}</div>
-  ) : (
-    <Link className={className} href={href}>
-      {icon}
-    </Link>
-  );
-}
+    'ml-2 md:ml-4': direction === 'righ
